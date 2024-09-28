@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tempo para Atividades em Grupo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Gerenciador de Tempo para Atividades</h1>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Adicionar Participante</h5>
+                <form id="participant-form" class="d-flex flex-column align-items-center">
+                    <div class="mb-3 w-100">
+                        <label for="name" class="form-label">Nome do Participante</label>
+                        <input type="text" class="form-control" id="name" placeholder="Digite o nome do participante" required>
+                    </div>
+                    <div class="mb-3 w-100">
+                        <label for="time" class="form-label">Tempo da Tarefa (em minutos)</label>
+                        <input type="number" class="form-control" id="time" placeholder="Digite o tempo da tarefa" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar Participante</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Participantes</h5>
+                <ul id="participant-list" class="list-group"></ul>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Histórico de Sessões</h5>
+                <ul id="session-history" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    background-color: #fdfdfd;
+}
+
+h1 {
+    color: #5a7ddb;
+}
+
+#participant-list li, #session-history li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {   
+    display: block;
+    margin: 0 auto; 
+}
+
+.btn-primary {
+    background-color: #14366e;
+    border-color: #14366e;
+}
+
+.btn-primary:hover {
+    background-color: #102b56; 
+    border-color: #102b56;
+}
